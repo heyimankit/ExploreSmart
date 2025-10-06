@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ExploreSmart – AI Trip Planner</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/icons/travel.png" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e8e2b6b9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="logo">🌏 ExploreSmart</div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="planner.html">AI Planner</a></li>
+        <li><a href="dashboard.html">Saved Trips</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Discover Incredible India 🇮🇳</h1>
+      <p>Your smart AI-powered trip planner for unforgettable journeys.</p>
+
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search destination...">
+        <button id="searchBtn"><i class="fas fa-search"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== POPULAR DESTINATIONS ===== -->
+  <section class="destinations">
+    <h2>Popular Destinations</h2>
+    <div class="dest-grid">
+      <!-- Example cards -->
+      <div class="dest-card" onclick="goToDestination('goa')">
+        <img src="assets/images/goa.jpg" alt="Goa">
+        <h3>Goa</h3>
+        <p>Beaches • Nightlife • Relaxation</p>
+      </div>
+
+      <div class="dest-card" onclick="goToDestination('kolkata')">
+        <img src="assets/images/kolkata.jpg" alt="Kolkata">
+        <h3>Kolkata</h3>
+        <p>Culture • Food • Heritage</p>
+      </div>
+
+      <div class="dest-card" onclick="goToDestination('jaipur')">
+        <img src="assets/images/jaipur.jpg" alt="Jaipur">
+        <h3>Jaipur</h3>
+        <p>Palaces • History • Shopping</p>
+      </div>
+
+      <div class="dest-card" onclick="goToDestination('manali')">
+        <img src="assets/images/manali.jpg" alt="Manali">
+        <h3>Manali</h3>
+        <p>Mountains • Adventure • Snow</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CATEGORIES ===== -->
+  <section class="categories">
+    <h2>Explore by Category</h2>
+    <div class="cat-grid">
+      <div class="cat-card" onclick="filterCategory('mountains')">
+        <i class="fas fa-mountain"></i>
+        <h3>Mountains</h3>
+      </div>
+      <div class="cat-card" onclick="filterCategory('beaches')">
+        <i class="fas fa-umbrella-beach"></i>
+        <h3>Beaches</h3>
+      </div>
+      <div class="cat-card" onclick="filterCategory('heritage')">
+        <i class="fas fa-landmark"></i>
+        <h3>Heritage</h3>
+      </div>
+      <div class="cat-card" onclick="filterCategory('food')">
+        <i class="fas fa-utensils"></i>
+        <h3>Food</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 ExploreSmart | Built with ❤️ using HTML, CSS & JS</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
