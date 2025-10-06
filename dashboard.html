@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ExploreSmart | Saved Trips</title>
+  <link rel="icon" type="image/png" href="assets/icons/travel.png" />
+  <link rel="stylesheet" href="css/dashboard.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e8e2b6b9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">🌏 ExploreSmart</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="planner.html">AI Planner</a></li>
+        <li><a href="dashboard.html" class="active">Saved Trips</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <section class="dashboard">
+    <h2>My Saved Trips 💾</h2>
+    <div id="tripsContainer" class="trip-grid">
+      <p>Loading your trips...</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 ExploreSmart | Built with ❤️ using HTML, CSS & JS</p>
+  </footer>
+
+  <!-- LIBRARIES + JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

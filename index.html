@@ -1,109 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ExploreSmart – AI Trip Planner</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ExploreSmart – AI Trip Planner</title>
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="assets/icons/travel.png" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/icons/travel.png" />
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
 
-  <!-- Fonts & Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a2e8e2b6b9.js" crossorigin="anonymous"></script>
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a2e8e2b6b9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <!-- ===== NAVBAR ===== -->
-  <header class="navbar">
-    <div class="logo">🌏 ExploreSmart</div>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="planner.html">AI Planner</a></li>
-        <li><a href="dashboard.html">Saved Trips</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- ===== HERO SECTION ===== -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Discover Incredible India 🇮🇳</h1>
-      <p>Your smart AI-powered trip planner for unforgettable journeys.</p>
-
-      <div class="search-bar">
-        <input type="text" id="searchInput" placeholder="Search destination...">
-        <button id="searchBtn"><i class="fas fa-search"></i></button>
-      </div>
+    <div class="right">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
     </div>
-  </section>
-
-  <!-- ===== POPULAR DESTINATIONS ===== -->
-  <section class="destinations">
-    <h2>Popular Destinations</h2>
-    <div class="dest-grid">
-      <!-- Example cards -->
-      <div class="dest-card" onclick="goToDestination('goa')">
-        <img src="assets/images/goa.jpg" alt="Goa">
-        <h3>Goa</h3>
-        <p>Beaches • Nightlife • Relaxation</p>
-      </div>
-
-      <div class="dest-card" onclick="goToDestination('kolkata')">
-        <img src="assets/images/kolkata.jpg" alt="Kolkata">
-        <h3>Kolkata</h3>
-        <p>Culture • Food • Heritage</p>
-      </div>
-
-      <div class="dest-card" onclick="goToDestination('jaipur')">
-        <img src="assets/images/jaipur.jpg" alt="Jaipur">
-        <h3>Jaipur</h3>
-        <p>Palaces • History • Shopping</p>
-      </div>
-
-      <div class="dest-card" onclick="goToDestination('manali')">
-        <img src="assets/images/manali.jpg" alt="Manali">
-        <h3>Manali</h3>
-        <p>Mountains • Adventure • Snow</p>
-      </div>
     </div>
-  </section>
 
-  <!-- ===== CATEGORIES ===== -->
-  <section class="categories">
-    <h2>Explore by Category</h2>
-    <div class="cat-grid">
-      <div class="cat-card" onclick="filterCategory('mountains')">
-        <i class="fas fa-mountain"></i>
-        <h3>Mountains</h3>
-      </div>
-      <div class="cat-card" onclick="filterCategory('beaches')">
-        <i class="fas fa-umbrella-beach"></i>
-        <h3>Beaches</h3>
-      </div>
-      <div class="cat-card" onclick="filterCategory('heritage')">
-        <i class="fas fa-landmark"></i>
-        <h3>Heritage</h3>
-      </div>
-      <div class="cat-card" onclick="filterCategory('food')">
-        <i class="fas fa-utensils"></i>
-        <h3>Food</h3>
-      </div>
-    </div>
-  </section>
+    <!-- ===== NAVBAR ===== -->
+    <header class="navbar glass">
+        <div class="logo"><i class="fas fa-plane-departure"></i> ExploreSmart</div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="planner.html">AI Planner</a></li>
+                <li><a href="dashboard.html">Saved Trips</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="planner.html" class="btn-primary">Plan with AI</a>
+    </header>
 
-  <!-- ===== FOOTER ===== -->
-  <footer>
-    <p>© 2025 ExploreSmart | Built with ❤️ using HTML, CSS & JS</p>
-  </footer>
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero">
+        <video autoplay muted loop id="heroVideo">
+            <source src="assets/images/hero.mp4" type="video/mp4" />
+        </video>
+        <div class="overlay"></div>
 
-  <!-- JS -->
-  <script src="js/main.js"></script>
+        <div class="hero-content">
+            <h1 class="animate-title">Discover Incredible <span>India</span> 🇮🇳</h1>
+            <p class="animate-sub">Your AI-powered travel companion – smart, simple, and unforgettable.</p>
+
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search destination...">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+
+            <div class="hero-buttons">
+                <a href="#destinations" class="btn-outline">Explore Now</a>
+                <a href="planner.html" class="btn-primary">Plan with AI</a>
+            </div>
+        </div>
+    </section>
+    <!-- ===== EXPLORE BY REGION ===== -->
+    <section id="regions" class="regions">
+        <h2>Explore Top Destinations by Region</h2>
+
+        <!-- Tabs -->
+        <div class="region-tabs">
+            <button class="tab active" data-region="north">North India</button>
+            <button class="tab" data-region="south">South India</button>
+            <button class="tab" data-region="east">East India</button>
+            <button class="tab" data-region="west">West India</button>
+            <button class="tab" data-region="central">Central India</button>
+        </div>
+
+        <!-- Region Cards Container -->
+        <div id="regionContainer" class="region-grid">
+            <!-- Default: North India -->
+        </div>
+    </section>
+
+    <!-- ===== EXPLORE BY CATEGORY ===== -->
+    <section class="categories">
+        <h2>Explore by Category</h2>
+        <div class="cat-grid">
+            <div class="cat-card" onclick="filterCategory('mountains')" data-aos="zoom-in">
+                <i class="fas fa-mountain"></i>
+                <h3>Mountains</h3>
+            </div>
+            <div class="cat-card" onclick="filterCategory('beaches')" data-aos="zoom-in" data-aos-delay="100">
+                <i class="fas fa-umbrella-beach"></i>
+                <h3>Beaches</h3>
+            </div>
+            <div class="cat-card" onclick="filterCategory('heritage')" data-aos="zoom-in" data-aos-delay="200">
+                <i class="fas fa-landmark"></i>
+                <h3>Heritage</h3>
+            </div>
+            <div class="cat-card" onclick="filterCategory('food')" data-aos="zoom-in" data-aos-delay="300">
+                <i class="fas fa-utensils"></i>
+                <h3>Food</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p>© 2025 ExploreSmart | Built with ❤️ using HTML, CSS & JS</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
