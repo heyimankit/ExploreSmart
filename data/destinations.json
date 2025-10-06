@@ -1,0 +1,48 @@
+{
+  "kolkata": {
+    "name": "Kolkata",
+    "city": "Kolkata",
+    "description": "The City of Joy – famous for culture, food, and heritage.",
+    "image": "assets/images/kolkata.jpg",
+    "attractions": [
+      {
+        "name": "Victoria Memorial",
+        "desc": "A majestic marble museum dedicated to Queen Victoria.",
+        "image": "assets/images/victoria.jpg"
+      },
+      {
+        "name": "Howrah Bridge",
+        "desc": "An iconic steel bridge spanning the Hooghly River.",
+        "image": "assets/images/howrah.jpg"
+      },
+      {
+        "name": "Park Street",
+        "desc": "The best place for nightlife and authentic Bengali cuisine.",
+        "image": "assets/images/parkstreet.jpg"
+      }
+    ]
+  },
+  "goa": {
+    "name": "Goa",
+    "city": "Goa",
+    "description": "India’s beach paradise – sun, sand, and sea adventures.",
+    "image": "assets/images/goa.jpg",
+    "attractions": [
+      {
+        "name": "Baga Beach",
+        "desc": "Famous for its nightlife, water sports, and shacks.",
+        "image": "assets/images/baga.jpg"
+      },
+      {
+        "name": "Aguada Fort",
+        "desc": "Historic fort overlooking the Arabian Sea.",
+        "image": "assets/images/aguada.jpg"
+      },
+      {
+        "name": "Anjuna Market",
+        "desc": "Vibrant flea market for souvenirs and beachwear.",
+        "image": "assets/images/anjuna.jpg"
+      }
+    ]
+  }
+}

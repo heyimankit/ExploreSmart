@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ExploreSmart | Destination</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/icons/travel.png" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/destination.css" />
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e8e2b6b9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="logo">🌏 ExploreSmart</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="planner.html">AI Planner</a></li>
+        <li><a href="dashboard.html">Saved Trips</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <section class="destination-hero" id="heroSection">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1 id="placeName">Destination Name</h1>
+      <p id="placeDesc">Exploring the heart of India’s culture and charm...</p>
+      <div class="weather-box" id="weatherBox">
+        <i class="fas fa-cloud-sun"></i>
+        <p id="weatherText">Loading weather...</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TOP ATTRACTIONS ===== -->
+  <section class="attractions">
+    <h2>Top Attractions</h2>
+    <div class="attr-grid" id="attractionGrid">
+      <!-- Dynamic attractions will load here -->
+    </div>
+  </section>
+
+  <!-- ===== PRESET ITINERARIES ===== -->
+  <section class="itineraries">
+    <h2>Preset Itineraries</h2>
+    <div class="iti-buttons">
+      <button onclick="loadItinerary(4)">4-Day Plan</button>
+      <button onclick="loadItinerary(5)">5-Day Plan</button>
+      <button onclick="loadItinerary(6)">6-Day Plan</button>
+    </div>
+    <div id="itineraryContainer" class="itinerary-container">
+      <p>Select a plan to view its details.</p>
+    </div>
+  </section>
+
+  <!-- ===== AI ASSISTANT CTA ===== -->
+  <section class="ai-planner">
+    <h2>Want a Custom Trip Plan?</h2>
+    <p>Let our <strong>AI Assistant 🤖</strong> create a personalized itinerary for you.</p>
+    <a href="planner.html" class="ai-btn">Plan with AI Assistant</a>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 ExploreSmart | Built with ❤️ using HTML, CSS & JS</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/destination.js"></script>
+</body>
+</html>

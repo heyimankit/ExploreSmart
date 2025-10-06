@@ -1,0 +1,25 @@
+{
+  "kolkata": {
+    "4days": [
+      "Arrive and explore Park Street cafes.",
+      "Visit Victoria Memorial and Indian Museum.",
+      "Boat ride on the Ganges, Howrah Bridge.",
+      "Shop at New Market and try Bengali sweets."
+    ],
+    "5days": [
+      "Arrive and relax at hotel.",
+      "Explore Howrah Bridge & Dakshineswar Temple.",
+      "Full day cultural walk & tram ride.",
+      "Visit Victoria Memorial & St. Paul’s Cathedral.",
+      "Shop and try street food."
+    ]
+  },
+  "goa": {
+    "4days": [
+      "Check-in & enjoy Baga Beach.",
+      "Visit Aguada Fort and evening cruise.",
+      "Explore Old Goa churches.",
+      "Shop at Anjuna Market & relax."
+    ]
+  }
+}

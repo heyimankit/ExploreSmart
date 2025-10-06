@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f9fafb;
+  color: #222;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #0a4d68;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  height: 70px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.navbar a:hover {
+  color: #ffcc00;
+}
+
+/* HERO */
+.destination-hero {
+  height: 70vh;
+  background: url('../assets/images/default.jpg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+  margin-top: 70px;
+}
+.destination-hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+.destination-hero .content {
+  position: relative;
+  z-index: 2;
+}
+.weather-box {
+  margin-top: 10px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* ATTRACTIONS */
+.attractions {
+  padding: 60px 5%;
+  text-align: center;
+}
+.attr-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 20px;
+}
+.attr-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.attr-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.attr-card h3 {
+  margin: 10px;
+}
+
+/* ITINERARY */
+.itineraries {
+  background: #eef3f6;
+  padding: 60px 5%;
+  text-align: center;
+}
+.iti-buttons button {
+  background: #0a4d68;
+  color: white;
+  border: none;
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.itinerary-container {
+  background: white;
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+/* AI PLANNER CTA */
+.ai-planner {
+  text-align: center;
+  padding: 80px 5%;
+}
+.ai-btn {
+  display: inline-block;
+  background: #0a4d68;
+  color: white;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+.ai-btn:hover {
+  background: #083b52;
+}
+
+/* FOOTER */
+footer {
+  background: #0a4d68;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
